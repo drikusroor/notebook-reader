@@ -1,0 +1,10 @@
+FROM python:3.6-stretch
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+RUN pip install -r requirements.txt \
+  && apt update \
+  && apt install -y libgl1-mesa-glx
+
+CMD ["/bin/bash"]
