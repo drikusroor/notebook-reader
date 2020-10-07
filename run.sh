@@ -1,0 +1,1 @@
+docker run -it -v ${PWD}/src:/usr/src/app/src ainab/notebook-reader
